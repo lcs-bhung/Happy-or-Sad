@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //Mark: Properties
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var analyse: UIButton!
+    @IBOutlet weak var result: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
