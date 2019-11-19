@@ -19,6 +19,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    //Analyse
+    @IBAction func analyse(_ sender: Any) {
+        //Get user imputs
+        let textFieldAsString = UITextField.text
+        
+        //Use guard
+        guard textFieldAsString != nil  else{
+            result.text = "Please enter a text"
+            return
+        }
+        
+        
+    }
 
 
 }
