@@ -28,6 +28,10 @@ class ViewController: UIViewController {
             result.text = "Please enter text"
             return
         }
+        //Make sure the imput is not too long
+        if textFieldAsString.count > 255 {
+            result.text = "please enter less characters"
+        }
        
         //make variable happy count and sad count
         
@@ -46,7 +50,7 @@ class ViewController: UIViewController {
         } else if happyCount < sadCount {
             result.text = "Sad"
         }
-    } 
+    }
     }
 
 
