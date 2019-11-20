@@ -22,16 +22,31 @@ class ViewController: UIViewController {
     
     //Analyse
     @IBAction func analyse(_ sender: Any) {
-        //Get user imputs
-        let textFieldAsString = UITextField.text
-        
-        //Use guard
-        guard textFieldAsString != nil  else{
-            result.text = "Please enter a text"
+      
+        //Use guard if ther is no imput
+        guard let textFieldAsString = textField.text, textFieldAsString != "" else{
+            result.text = "Please enter text"
             return
         }
+       
+        //make variable happy count and sad count
         
+        var happyCount = 0
+        var sadCount = 0
         
+        //Incpect each character for happy and sad
+        
+        //Determining if there are more happy or sad
+        if happyCount == sadCount {
+            result.text = "the same"
+        } else if happyCount = 0 && sadCount = 0 {
+            result.text = "There are no happy or sad emojis"
+        } else if happyCount > sadCount {
+            result.text = "Happy"
+        } else happyCount < sadCount {
+            result.text = "Sad"
+        }
+    }
     }
 
 
