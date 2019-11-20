@@ -39,16 +39,16 @@ class ViewController: UIViewController {
         //Determining if there are more happy or sad
         if happyCount == sadCount {
             result.text = "the same"
-        } else if happyCount = 0 && sadCount = 0 {
+        } else if happyCount == 0 && sadCount == 0 {
             result.text = "There are no happy or sad emojis"
         } else if happyCount > sadCount {
             result.text = "Happy"
-        } else happyCount < sadCount {
+        } else if happyCount < sadCount {
             result.text = "Sad"
         }
-    }
+    } 
     }
 
 
-}
+
 
