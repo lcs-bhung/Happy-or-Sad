@@ -43,13 +43,11 @@ class ViewController: UIViewController {
         //Incpect each character for happy and sad
         
         for character in textFieldAsString {
-            if happyEmojis.contains(textFieldAsString){
+            if happyEmojis.contains(character){
                 happyCount += 1
             }
-            for character in textFieldAsString {
-                if sadEmojis.contains(textFieldAsString){
-                    sadCount += 1
-                }
+            if sadEmojis.contains(character){
+                sadCount += 1
             }
         }
         
