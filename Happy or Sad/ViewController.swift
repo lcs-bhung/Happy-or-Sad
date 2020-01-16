@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var analyse: UIButton!
     @IBOutlet weak var result: UILabel!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     //Analyse
     @IBAction func analyse(_ sender: Any) {
-      
+        
         //Use guard if ther is no imput
         guard let textFieldAsString = textField.text, textFieldAsString != "" else{
             result.text = "Please enter text"
@@ -33,9 +33,9 @@ class ViewController: UIViewController {
             result.text = "please enter less characters"
             return
         }
-       
+        
         //make variable happy count and sad count and declare what are happy and sad emojis
-    
+        
         var happyCount = 0
         var sadCount = 0
         let happyEmojis = "😀🙂😄😊"
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
             result.text = "Sad"
         }
     }
-    }
+}
 
 
 
